@@ -1,0 +1,36 @@
+package com.company;
+import java.util.Scanner;
+public class practiceSet 
+{
+    public static void main(String[] args)
+    {
+      System.out.println("Enter your Name");
+        Scanner scr= new Scanner(System.in);
+
+        String str= scr.nextLine();
+
+        System.out.println("Enter Subjects");
+        Scanner sc= new Scanner(System.in);
+
+        String x= scr.nextLine();
+        String y= scr.nextLine();
+        String z= scr.nextLine();
+
+        System.out.println("Enter marks of the above subjects");
+        Scanner s= new Scanner(System.in);
+        int a= s.nextInt();
+        int b= s.nextInt();
+        int c= s.nextInt();
+
+        float avg = (a+b+c)/3.0f;
+        System.out.println("Overall percentage is: "+avg);
+        if(avg>=40 && a>=33 &&b>=33 && c>=33)
+        {
+            System.out.println("Congratulations,"+str+ " You have been promoted to next class!");
+        }
+        else
+        {
+            System.out.println("OOPS, You are not getting promoted to next class!");
+        }
+    }
+}
