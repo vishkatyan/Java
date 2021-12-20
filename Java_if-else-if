@@ -1,0 +1,23 @@
+package com.company;
+import java.util.Scanner;
+public class Java_if-else-if
+{
+    public static void main(String[] args)
+    {
+    System.out.println("Enter your age");
+        int age;
+        Scanner sc = new Scanner(System.in);
+        age = sc.nextInt();
+       if (age > 20)
+          {
+           System.out.println("You are a working professional!");
+          } 
+          else if (age > 18) 
+          {
+            System.out.println("You are a college student");
+          } else
+          {
+            System.out.println("You are a school Student");
+          }
+     }
+ }    
