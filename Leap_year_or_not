@@ -1,0 +1,30 @@
+package com.company;
+import java.util.Scanner;
+public class practiceSet 
+{
+    public static void main(String[] args) 
+    {
+    System.out.println("This is the program to check whether a year is leap or not!");
+        System.out.println("Enter a year");
+        Scanner scr = new Scanner(System.in);
+        int year = scr.nextInt();
+        boolean isleap= false;
+        if(year%400==0){
+            isleap=true;
+        } else if(year % 100 ==0){
+            isleap= false;
+        } else if(year % 4==0){
+            isleap=true;
+        } else{
+            isleap=false;
+        }
+        if(isleap){
+            System.out.println("Year" +year+"is a leap year!");
+        } else{
+            System.out.println("Year" +year+"is not a leap year!");
+        }
+
+
+    }
+}
+
