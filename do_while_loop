@@ -1,0 +1,18 @@
+// Do-while Loop to print 'n' natural numbers through user input.
+package com.company;
+import java.util.Scanner;
+public class do_while-Lloop 
+{
+    public static void main(String[] args) 
+    {
+    
+        System.out.println("Enter a number to print natural numbers upto that number");
+        Scanner scr = new Scanner(System.in);
+        int n= scr.nextInt();
+        int a = 1;
+        do {                                     // entry in do loop
+            System.out.println(a);               //executes the condition at least once before matches condition
+            a++;
+           } while(a<n);                            // check condition
+    }
+}
