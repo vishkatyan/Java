@@ -1,0 +1,26 @@
+package com.company;
+public class practice_array_ques 
+{
+    public static void main(String[] args) 
+    {
+     int a[]={1, 12, 3, 4, 5,67};
+         boolean isSorted = true;
+         for(int i=0; i<a.length-1; i++)
+         {
+             if(a[i]> a[i+1])
+             {
+                 isSorted = false;
+                 break;
+             }
+         }
+         if(isSorted)
+         {
+             System.out.println("The array is Sorted");
+         } else
+         {
+             System.out.println("The array is not sorted");
+         }
+
+
+    }
+}
