@@ -1,0 +1,21 @@
+package com.company;
+public class practice_array_ques 
+{
+    public static void main(String[] args) 
+    {
+    int a[]={1, 2, 3, 499, 5,67};
+        int max=0;
+        for(int e : a)
+        {
+            if(e>max) 
+            {
+                max= e;
+            }
+        }
+        System.out.println("The value of the maximum element is: " +max);
+    }
+}
+
+
+Result:
+The value of the maximum element is: 499
