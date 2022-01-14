@@ -1,0 +1,33 @@
+package com.company;
+import java.util.Scanner;
+public class recursion {
+    static int factorial(int n){
+        //factorial(n) = n * factorial(n-1)
+        if(n==0 || n==1){
+            return 1;
+        }
+        else{
+            return n* factorial(n-1);
+        }
+    }
+    static int factorial_iterative(int n){        
+        if(n==0 || n==1){
+            return 1;
+        }
+        else{
+            int p=1;
+            for(int i=1; i<=n;i++){
+                p*=i;
+            }
+            return p;
+        }
+    }
+    public static void main(String[] args) {
+        int x=5;
+        System.out.println("The factorial of the number is: " +factorial(x));
+        System.out.println("Enter the number to find factorial: ");
+        Scanner scr = new Scanner(System.in);
+        int a= scr.nextInt();
+        System.out.println("The factorial of the number is: " +factorial_iterative(a));
+    }
+}
